@@ -1,0 +1,26 @@
+# unix
+alias l='ls -lah'
+
+# java
+alias -g j='java'
+alias -g jv='java -version'
+alias -g jc='javac'
+alias -g jj='java -jar'
+alias -g jp='javap -v -l -p -c -s'
+
+# arch java
+alias -g js='archlinux-java status'
+alias -g jdk11='sudo archlinux-java set java-11-openjdk'
+alias -g jdk15='sudo archlinux-java set java-15-openjdk'
+
+# maven
+alias mp='mvn package'
+alias mci='mvn clean install'
+alias mct='mvn clean test'
+
+# docker
+alias da='docker ps -a'
+alias dr='docker rm'
+alias dri='docker rmi'
+alias di='docker images'
+alias dclean='docker ps -q -a -f status=exited | xargs -r docker rm && docker images -q -f dangling=true | xargs -r docker rmi'
